@@ -6,7 +6,11 @@
 <!-- Icons Css -->
 <link href="{{ URL::asset('build/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
 <!-- App Css-->
-<link href="{{ URL::asset('build/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
+@if(\Illuminate\Support\Facades\App::getLocale() == 'en')
+    <link href="{{ URL::asset('build/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
+@else
+    <link href="{{ URL::asset('build/css/app.rtl.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
+@endif
 <!-- custom Css-->
 <link href="{{ URL::asset('build/css/custom.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
 {{-- @yield('css') --}}

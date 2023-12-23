@@ -196,7 +196,7 @@
                  <div id="sidebar-visibility">
                     <h6 class="mt-4 mb-0 fw-semibold text-uppercase">Sidebar Visibility</h6>
                     <p class="text-muted">Choose show or Hidden sidebar.</p>
-                
+
                     <div class="row">
                         <div class="col-4">
                             <div class="form-check card-radio">
@@ -675,7 +675,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div id="preloader-menu">
                     <h6 class="mt-4 mb-0 fw-semibold text-uppercase">Preloader</h6>
                     <p class="text-muted">Choose a preloader.</p>

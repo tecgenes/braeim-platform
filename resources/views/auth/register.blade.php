@@ -63,7 +63,7 @@
                                             </div>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="username" class="form-label">Username <span
+                                            <label for="username" class="form-label">Name <span
                                                     class="text-danger">*</span></label>
                                             <input type="text" class="form-control @error('name') is-invalid @enderror"
                                                 name="name" value="{{ old('name') }}" id="username"
@@ -74,10 +74,9 @@
                                                 </span>
                                             @enderror
                                             <div class="invalid-feedback">
-                                                Please enter username
+                                                Please enter name
                                             </div>
                                         </div>
-
                                         <div class="mb-2">
                                             <label for="userpassword" class="form-label">Password <span
                                                     class="text-danger">*</span></label>
@@ -102,18 +101,6 @@
 
                                             <div class="form-floating-icon">
                                                 <i data-feather="lock"></i>
-                                            </div>
-                                        </div>
-                                        <div class=" mb-4">
-                                            <input type="file" class="form-control @error('avatar') is-invalid @enderror"
-                                                name="avatar" id="input-avatar" required>
-                                            @error('avatar')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                            @enderror
-                                            <div class="">
-                                                <i data-feather="file"></i>
                                             </div>
                                         </div>
 
