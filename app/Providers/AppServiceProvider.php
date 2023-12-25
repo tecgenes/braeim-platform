@@ -16,9 +16,9 @@ class AppServiceProvider extends ServiceProvider
     public function register(): void
     {
         Schema::defaultStringLength(121);
-//        $loader = AliasLoader::getInstance();
-//        $loader->alias(Permission::class, \App\Services\Permission::class);
-//        $loader->alias(Role::class, \App\Services\Role::class);
+        $loader = AliasLoader::getInstance();
+        $loader->alias(Permission::class, \App\Services\Permission::class);
+        $loader->alias(Role::class, \App\Services\Role::class);
     }
 
     /**

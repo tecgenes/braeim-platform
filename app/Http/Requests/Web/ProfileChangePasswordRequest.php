@@ -28,16 +28,17 @@ class ProfileChangePasswordRequest extends FormRequest
         ];
     }
 
-//    public function messages(): array
-//    {
-//        return [
-//            'old_password.required' => 'Please enter Old Password',
-//            'new_password.min' => 'Password leanth is 6',
-//            'new_password.required_with' => 'Please enter confirmation',
-//            'new_password.same' => 'Password and confirmation must be same',
-//            'password_confirmation.required' => 'Please enter password confirmation'
-//
-//
-//        ];
-//    }
+    public function messages(): array
+    {
+        return [
+            'old_password.required' => __('validation.old_password_required'),
+            'new_password.min' => __('validation.new_password_min'),
+            'new_password.required_with' => __('validation.new_password_required_with'),
+            'new_password.same' => __('validation.new_password_same'),
+            'password_confirmation.required' => __('validation.password_confirmation_required'),
+            'password_confirmation.min' => __('validation.password_confirmation_min'),
+
+
+        ];
+    }
 }

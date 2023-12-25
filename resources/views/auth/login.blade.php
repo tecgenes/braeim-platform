@@ -46,7 +46,9 @@
                                     @csrf
                                     <div class="mb-3">
                                         <label for="username" class="form-label">{{__('auth.email')}}</label>
-                                        <input type="text" class="form-control @error('email') is-invalid @enderror" id="username" name="email" placeholder="{{__('auth.email_enter')}}" autocomplete="off">
+                                        <input
+                                            type="text" class="form-control @error('email') is-invalid @enderror" value="{{old('email')}}"
+                                            id="username" name="email" placeholder="{{__('auth.email_enter')}}" autocomplete="off">
                                         @error('email')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
